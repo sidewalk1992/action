@@ -17,4 +17,6 @@ jobs:
           - name: abc
             run: |
                 echo 123
-                echo $projects
+                for e in ${projects[*]}; do
+                    echo $e
+                done
