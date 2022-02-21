@@ -1,0 +1,8 @@
+jobs:
+    BlackDuck Scan:
+        env:
+            projects: ("frontend" "backend")
+        steps:
+            name: abc
+            run: |
+                echo $projects
