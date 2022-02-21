@@ -6,7 +6,7 @@ on:
     workflow_dispatch:
 
 jobs:
-    BlackDuck Scan:
+    BlackDuck-Scan:
         runs-on: ubuntu-latest
         env:
             projects: ("frontend" "backend")
