@@ -9,7 +9,7 @@ jobs:
     BlackDuck-Scan:
         runs-on: ubuntu-latest
         env:
-            projects: "frontend" "backend" "controller" "mt"
+            projects: ("frontend" "backend" "controller" "mt")
         steps:
           - name: Check out repository code
             uses: actions/checkout@v2
