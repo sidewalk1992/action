@@ -2,9 +2,13 @@ name: Test
 
 jobs:
     BlackDuck Scan:
+        runs-on: ubuntu-latest
         env:
             projects: ("frontend" "backend")
         steps:
+          - name: Check out repository code
+            uses: actions/checkout@v2
+
             name: abc
             run: |
-                echo $projects
+                echo 123
