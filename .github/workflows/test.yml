@@ -1,9 +1,9 @@
 name: Test
 
-on:
-    schedule:
-        - cron: '0 1 1 * *'
-    workflow_dispatch:
+on: [push]
+    # schedule:
+    #     - cron: '0 1 1 * *'
+    # workflow_dispatch:
 
 jobs:
     BlackDuck-Scan:
@@ -17,5 +17,6 @@ jobs:
           - name: abc
             run: |
                 for e in ${projects[*]}; do
+                    echo 1
                     echo $e
                 done
